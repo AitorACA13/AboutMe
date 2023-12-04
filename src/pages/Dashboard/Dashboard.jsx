@@ -1,5 +1,5 @@
 import './dashboard.css';
-import imgInicio from './../../../public/images/aitorParis.jpg';
+import DashPhoto from './../../../public/images/aitorParis.jpg';
 
 function Dashboard() {
   return (
@@ -12,7 +12,7 @@ function Dashboard() {
             clicks mi carrera y proyectos.
           </p>
         </div>
-        <img className='imgDash' src={imgInicio} alt='img-inicio' />
+        <img className='imgDash' src={DashPhoto} alt='img-inicio' />
       </div>
     </>
   );
