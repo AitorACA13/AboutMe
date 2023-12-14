@@ -1,16 +1,13 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import interest from '../data/interest';
+import './mapa.css';
 
 const Map = () => {
-  const defaultCenter = [40.4168, -3.7038];
+  const defaultCenter = [43.7102, -1.0514];
 
   return (
-    <MapContainer
-      center={defaultCenter}
-      zoom={12}
-      style={{ height: '500px', width: '100%' }}
-    >
+    <MapContainer center={defaultCenter} zoom={5} className='mapContainer'>
       <TileLayer
         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

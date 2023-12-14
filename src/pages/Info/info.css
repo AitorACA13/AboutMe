@@ -1,4 +1,21 @@
-imgInfo {
+main {
+  margin: 15px;
+  width: 80%;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.imgInfo {
   height: 400px;
   width: 300px;
   border-radius: 10px;
