@@ -1,5 +1,5 @@
-import './dashboard.css';
 import DashPhoto from './../../../public/images/aitorParis.jpg';
+import './dashboard.css';
 
 function Dashboard() {
   return (
