@@ -1,11 +1,11 @@
-main {
-  margin: 15px;
-  width: 80%;
+.info {
+  margin: 0px 20px 0 20px;
 }
 
 .contact {
   display: flex;
   align-items: center;
+  background-color: rgb(136, 211, 255);
 }
 
 ul {
@@ -17,7 +17,40 @@ li {
 }
 .imgInfo {
   height: 400px;
-  width: 300px;
+  width: 350px;
   border-radius: 10px;
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.infoName {
+  margin-left: 100px;
+}
+
+.infoDate {
+  margin-left: 80px;
+}
+
+.infoHome {
+  margin-left: 60px;
+}
+
+.infoMail {
+  margin-left: 40px;
+}
+
+.infoGit {
+  margin-left: 20px;
+}
+.infoLink {
+  margin-left: 0px;
+}
+
+.description {
+  width: 900px;
+  margin-left: 70px;
+  padding: 40px;
+  border: 1px solid rgb(0, 5, 0);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
 }

@@ -1,7 +1,10 @@
+#dashboard {
+  margin: 0px 20px 0 20px;
+}
 .dashboard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* Distribuye las columnas horizontalmente */
+  padding: 20px;
+  margin-top: 20px;
 }
 .titleDashboard {
   flex: 1;

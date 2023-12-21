@@ -1,0 +1,29 @@
+/* src/components/Carousel.css */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  margin: 20px auto;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 calc(100% / 8); /* Ajusta según el número de elementos visibles */
+}
+
+img {
+  max-width: 400px;
+  height: 400px;
+  transition: transform 1s ease;
+}
