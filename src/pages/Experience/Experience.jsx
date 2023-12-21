@@ -1,6 +1,8 @@
 import welderVideo from '../../../public/images/Guada-soldadura.mp4';
 import Map from '../../components/Mapa.jsx';
-
+import logoProg from '../../../public/images/logoprog.jpg';
+import logoVj from '../../../public/images/logovj.jpg';
+import logoStudy from '../../../public/images/logoestudio.jpg';
 import './experience.css';
 
 function Experience() {
@@ -67,13 +69,51 @@ function Experience() {
   return (
     <>
       <div id='experience'>
-        <h2>Estudios</h2>
-        <div>
-          <p>-IES Las Lagunas(2006-2014) ESO y Bachillerato</p>
-          <p>-CEV (2018-2020) Animación 3D y entornos interactivos</p>
-          <p>Hack a Boss (2023) Programación web Full Stack</p>
+        <div className='titleStudy'>
+          <h2>Estudios y tecnologías</h2>
         </div>
+        <div className='learn'>
+          <div className='imgStudy'>
+            <img className='imglog' src={logoStudy} alt='imgStudy' />
+          </div>
+          <div className='study'>
+            <ul className='list'>
+              <li>IES Las Lagunas, 2006-2014</li>
+              <li>ESO y Bachillerato.</li>
+              <li>CEV, 2018-2020</li>
+              <li>Animación 3D y entornos interactivos.</li>
+              <li>Hack a Boss, 2023</li>
+              <li>Programación web FullStack</li>
+            </ul>
+          </div>
 
+          <div className='imgDev'>
+            <img className='imglog' src={logoProg} alt='imgDw' />
+          </div>
+          <div className='dev'>
+            <ul className='list'>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Node</li>
+              <li>React</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div className='imgVideoG'>
+            <img className='imglog' src={logoVj} alt='imgVj' />
+          </div>
+          <div className='videoG'>
+            <ul className='list'>
+              <li>Zbrush</li>
+              <li>Blender</li>
+              <li>Maya</li>
+              <li>Substance Painter</li>
+              <li>Premiere</li>
+              <li>Unity</li>
+            </ul>
+          </div>
+        </div>
         <h2>Experiencia</h2>
         <div className='experience'>
           {enterprises.map((column, columnIndex) => (
@@ -99,23 +139,73 @@ function Experience() {
             </video>
           </div>
           <div className='skillsInfo'>
-            <p>
-              Trabajo en equipo: los equipos estaban compuestos por 4 o 5
-              personas y siempre ha sido importante la organización para
-              realizar todos los procesos para hacer y finalizar los trabajos
-              con éxito.
-            </p>
-            <p>Comunicación: </p>
-            <p>
-              Tolerancia al estrés: La responsabilidad del trabajo y su pequeño
-              porcentaje al fallo a la hora de soldar en momentos donde los
-              clientes requieren el mismo trabajo en menos tiempo hizo que
-              ganase confianza y seguridad en ese tipo de momentos.
-            </p>
-            <p>Gestión de tiempo</p>
-            <p>Resolución de problemas</p>
-            <p>Aprendizaje práctico</p>
-            <p>Adaptabilidad</p>
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Trabajo en equipo:</span> He
+                trabajado en equipos compuestos por 4 o 5 personas. La
+                colaboración y la organización son fundamentales para llevar a
+                cabo todos los procesos necesarios y garantizar el éxito en la
+                ejecución y finalización de los trabajos.
+              </p>
+            </div>
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Comunicación:</span> He desarrollado
+                habilidades efectivas de comunicación para coordinar y compartir
+                información clave con mis compañeros de equipo. La comunicación
+                clara es esencial para garantizar la seguridad y la eficiencia
+                en el entorno de trabajo.{' '}
+              </p>
+            </div>
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Tolerancia al estrés: </span>La
+                naturaleza del trabajo como soldador a menudo implica la
+                responsabilidad de cumplir con plazos ajustados. Mi experiencia
+                me ha enseñado a manejar el estrés eficazmente, especialmente en
+                situaciones donde se requiere realizar trabajos de soldadura en
+                un tiempo limitado sin comprometer la calidad.
+              </p>
+            </div>
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Gestión de tiempo: </span>La gestión
+                eficiente del tiempo es crucial para cumplir con los plazos
+                establecidos y garantizar la finalización oportuna de los
+                proyectos. He perfeccionado mis habilidades de programación y
+                organización para maximizar la productividad.
+              </p>
+            </div>
+
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Resolución de problemas:</span> Me
+                he enfrentado a diversos desafíos técnicos y operativos. Mi
+                capacidad para analizar problemas, identificar soluciones
+                efectivas y aplicar ajustes en tiempo real ha sido clave para
+                superar obstáculos y garantizar la calidad del trabajo.
+              </p>
+            </div>
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Aprendizaje práctico:</span> La
+                soldadura a menudo requiere adaptarse a diferentes materiales y
+                técnicas. He demostrado una capacidad constante para el
+                aprendizaje práctico, adquiriendo nuevas habilidades y técnicas
+                a medida que evoluciona la tecnología y las demandas del
+                trabajo.
+              </p>
+            </div>
+
+            <div className='paragraph'>
+              <p>
+                <span className='highlight'>Adaptabilidad: </span>En un entorno
+                dinámico como la soldadura, la adaptabilidad es esencial. Me he
+                adaptado con éxito a cambios en los procesos, materiales y
+                especificaciones del proyecto, lo que ha contribuido a mi
+                capacidad para enfrentar nuevos desafíos con confianza.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,16 +1,97 @@
 #experience {
-  margin-left: 20px;
+  width: 100%;
+  height: 100%;
 }
+.titleStudy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  background-color: rgb(4, 102, 102);
+}
 .experience {
   display: flex;
   justify-content: space-around; /* Distribuye las columnas horizontalmente */
+  padding: 20px;
   margin-top: 20px;
+  background-color: gray;
+}
+.learn {
+  display: flex;
+  background-color: rgb(74, 159, 238);
+  padding: 30px 0 80px 0;
+}
+.list {
+  margin-top: 40px;
+}
+.study {
+  height: 340px;
+  width: 400px;
+  border: 1px solid rgb(75, 74, 74);
+  border-radius: 10px;
+  margin: 70px 30px 10px 254px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
 }
 
+.imgStudy {
+  margin: 65px -354px 21px 232px;
+  height: 130px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transform: rotate(-30deg);
+  color: white;
+}
+
+.dev {
+  height: 340px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 70px 30px 10px -90px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
+
+.imgDev {
+  margin: 65px -15px 10px 10px;
+  height: 130px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transform: rotate(-30deg);
+  color: white;
+}
+
+.videoG {
+  height: 340px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 70px 30px 10px 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
+
+.imgVideoG {
+  margin: 65px -160px 10px 10px;
+  height: 130px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transform: rotate(-30deg);
+  color: white;
+}
+
+.imglog {
+  border-radius: 10px;
+  height: 130px;
+  width: 150px;
+}
 .enterprises {
-  flex: 1; /* Ocupa todo el espacio disponible */
-  max-width: 1000px; /* Ajusta el ancho máximo de cada columna según tus necesidades */
+  flex: 1;
+  max-width: 1000px;
 }
 
 .entrepriseCard > p {
@@ -25,25 +106,35 @@ h3,
   text-align: center;
 }
 
-h3 {
-  margin-bottom: 50px;
-  border-bottom: 1px solid black;
-}
 .entrepriseCard {
   height: 200px;
   width: 200px;
-  border: 1px solid #ccc;
-  padding: 18px;
-  margin: 10px;
+  border: 1px solid #000000;
+  padding: 0px 0px 10px 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin: 17px 10px 33px 17px;
   border-radius: 10px;
+  background-color: white;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
 }
 
+.entreName {
+  margin: 0px 0px 30px 0px;
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(50, 73, 205);
+  border-bottom: 1px solid black;
+  color: white;
+}
 .welderVideo {
   margin-left: 20px;
-  height: 500px;
-  width: 400px;
-  border: 1px black solid;
+  height: 470px;
+  width: 390px;
+  border: 1px rgb(231, 231, 231) solid;
   border-radius: 10px;
+  box-shadow: 2px 1px 20px 14px white;
 }
 
 .welderGif {
@@ -55,8 +146,36 @@ h3 {
 .skills {
   display: flex;
   align-items: center;
+  background-color: rgba(94, 31, 3, 0.219);
+  height: 600px;
 }
 
 .skillsInfo {
   margin-left: 30px;
+}
+
+.paragraph {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold; /* Otra opción: puedes hacer el texto más destacado */
+  margin-right: 8px; /* Ajusta según sea necesario para el espacio entre el texto y el subrayado */
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 104%;
+  height: 20px; /* Grosor del subrayado */
+  background: linear-gradient(
+    to right,
+    rgba(113, 201, 13, 0.5),
+    rgba(201, 13, 13, 0)
+  );
 }
