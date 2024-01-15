@@ -20,7 +20,6 @@ function Dashboard() {
               </p>
 
               <p>
-                {' '}
                 Descubrirás más sobre mis intereses, las experiencias que han
                 moldeado mi camino y los proyectos que me han permitido crecer
                 como profesional. Este espacio es también una ventana a mi día a
