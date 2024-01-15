@@ -1,23 +1,46 @@
 #dashboard {
-  margin: 0px 20px 0 20px;
-}
-.dashboard {
-  /* Distribuye las columnas horizontalmente */
-  padding: 20px;
-  margin-top: 20px;
-}
-.titleDashboard {
-  flex: 1;
-  margin-right: 40px;
+  width: 100vw;
+  height: 93vh;
+  background-color: rgba(194, 194, 194, 0.726);
 }
 
-h1,
-p {
-  margin-bottom: 10px;
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.dashboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.titleDashboard {
+  flex: 1;
+  text-align: center;
+  margin-top: 140px;
+  margin-left: 90px;
+  align-items: center;
+}
+
+.imgCont {
+  flex: 1;
+  text-align: right;
+  margin-left: 294px;
+  margin-right: 100px;
+}
+
 .imgDash {
+  height: 828px;
+  width: 782px;
   border-radius: 20px;
-  height: 700px;
-  width: 550px;
-  margin-left: 60px;
+}
+
+h1 {
+  margin-bottom: 40px;
 }

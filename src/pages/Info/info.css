@@ -1,11 +1,47 @@
-.info {
-  margin: 0px 20px 0 20px;
+#info {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(194, 194, 194, 0.726);
+}
+.titleInfo,
+.titleLeng {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 18, 173);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 60px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.titleInfo:before,
+.titleLeng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #e2f10d 20%, transparent 20%),
+    linear-gradient(135deg, #000000 20%, transparent 20%);
+  background-size: 15px px;
+}
 .contact {
   display: flex;
   align-items: center;
   background-color: rgb(136, 211, 255);
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
 }
 
 ul {
@@ -18,16 +54,16 @@ li {
 .imgInfo {
   height: 400px;
   width: 350px;
-  border-radius: 10px;
+
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 }
 
 .infoName {
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .infoDate {
-  margin-left: 80px;
+  margin-left: 75px;
 }
 
 .infoHome {
@@ -35,16 +71,36 @@ li {
 }
 
 .infoMail {
-  margin-left: 40px;
+  margin-left: 45px;
 }
-
+.infoNumber {
+  margin-left: 30px;
+}
+.enlace {
+  color: white;
+}
 .infoGit {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .infoLink {
   margin-left: 0px;
 }
 
+.lenguages {
+  margin-bottom: 100px;
+}
+.motivation {
+  width: 1200px;
+  align-items: center;
+  background-color: rgb(136, 211, 255);
+  margin-left: 300px;
+  margin-bottom: 100px;
+  padding: 30px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
+.motivation p {
+  margin: 30px;
+}
 .description {
   width: 900px;
   margin-left: 70px;
@@ -53,4 +109,74 @@ li {
   border-top: none;
   border-right: none;
   border-bottom: none;
+}
+.hobbies {
+  display: flex;
+}
+.hobbies2 {
+  display: flex;
+}
+
+.paragraph {
+  position: relative;
+}
+.paragContainer {
+  padding: 40px;
+}
+.paragrContainer {
+  padding: 30px 0px 30px 40px;
+}
+.alonsoImg {
+  width: 250px;
+  height: 350px;
+  margin-top: -4px;
+  margin-right: 50px;
+  border-radius: 30px;
+}
+
+.venusImg {
+  width: 250px;
+  height: 350px;
+
+  border-radius: 30px;
+}
+
+.hobbiesSecond {
+  width: 631px;
+  height: 420px;
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  background-color: rgb(136, 211, 255);
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
+
+.hobbiesFirst {
+  width: 631px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 285px;
+  background-color: rgb(136, 211, 255);
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
+
+.paragContainer {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  flex: 1; /* Hace que el párrafo ocupe todo el espacio disponible */
+}
+
+.venusImg {
+  margin-left: 10px; /* Ajusta el espacio a la izquierda de la imagen */
+  max-width: 100%; /* Asegura que la imagen sea responsiva */
 }
