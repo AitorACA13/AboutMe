@@ -3,10 +3,10 @@ import Map from '../../components/Mapa.jsx';
 import logoProg from '../../../public/images/logoprog.jpg';
 import logoVj from '../../../public/images/logovj.jpg';
 import logoStudy from '../../../public/images/logoestudio.jpg';
+import Carousel from '../../components/carousel/Carousel.jsx';
 import './experience.css';
 
 function Experience() {
-  // Dividir las empresas en dos partes
   const enterprises = [
     // Dividir las empresas en tres partes
     [
@@ -66,10 +66,26 @@ function Experience() {
     ],
   ];
 
+  const images = [
+    './../../../public/images/sable.jpg',
+    './../../../public/images/salabombas.jpg',
+    './../../../public/images/moto.jpg',
+    './../../../public/images/12O.jpg',
+    './../../../public/images/12O1.jpg',
+    './../../../public/images/12O2.jpg',
+    './../../../public/images/elesa.jpg',
+    './../../../public/images/bateria.jpg',
+    './../../../public/images/camara.jpg',
+    './../../../public/images/preh.png',
+    './../../../public/images/chica.jpg',
+    './../../../public/images/piano02.jpg',
+    './../../../public/images/Sink01.jpg',
+  ];
+
   return (
     <>
       <div id='experience'>
-        <div className='titleStudy'>
+        <div className='titleExp'>
           <h2>Estudios y tecnologías</h2>
         </div>
         <div className='learn'>
@@ -114,7 +130,9 @@ function Experience() {
             </ul>
           </div>
         </div>
-        <h2>Experiencia</h2>
+        <div className='titleExp'>
+          <h2>Experiencia laboral</h2>
+        </div>
         <div className='experience'>
           {enterprises.map((column, columnIndex) => (
             <div key={columnIndex} className='enterprises'>
@@ -131,7 +149,10 @@ function Experience() {
           <Map />
         </div>
 
-        <h2>Habilidades</h2>
+        <Carousel images={images} />
+        <div className='titleExp'>
+          <h2>Habilidades</h2>
+        </div>
         <div className='skills'>
           <div className='welderVideo'>
             <video className='welderGif' autoPlay loop>

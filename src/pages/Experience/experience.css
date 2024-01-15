@@ -1,6 +1,7 @@
 #experience {
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  background-color: rgba(194, 194, 194, 0.726);
 }
 .titleStudy {
   display: flex;
@@ -9,17 +10,20 @@
 
   background-color: rgb(4, 102, 102);
 }
-.experience {
+.titleExperience {
   display: flex;
-  justify-content: space-around; /* Distribuye las columnas horizontalmente */
-  padding: 20px;
-  margin-top: 20px;
-  background-color: gray;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(4, 102, 102);
 }
+
 .learn {
   display: flex;
-  background-color: rgb(74, 159, 238);
+  background-color: rgb(136, 211, 255);
   padding: 30px 0 80px 0;
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
 }
 .list {
   margin-top: 40px;
@@ -35,7 +39,7 @@
 }
 
 .imgStudy {
-  margin: 65px -354px 21px 232px;
+  margin: 65px -354px 21px 280px;
   height: 130px;
   width: 150px;
   border: 2px solid black;
@@ -89,6 +93,14 @@
   height: 130px;
   width: 150px;
 }
+
+.experience {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(136, 211, 255);
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
+}
 .enterprises {
   flex: 1;
   max-width: 1000px;
@@ -124,9 +136,40 @@ h3,
   margin: 0px 0px 30px 0px;
   padding: 20px 0px 20px 0px;
   border-radius: 10px 10px 0px 0px;
-  background-color: rgb(50, 73, 205);
+  background-color: rgb(4, 88, 136);
   border-bottom: 1px solid black;
+  color: rgb(255, 255, 255);
+}
+.titleExp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 18, 173);
   color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 60px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleExp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #e2f10d 20%, transparent 20%),
+    linear-gradient(135deg, #000000 20%, transparent 20%);
+  background-size: 15px px; /* Ajusta el tamaño de las ondas */
 }
 .welderVideo {
   margin-left: 20px;
@@ -146,8 +189,9 @@ h3,
 .skills {
   display: flex;
   align-items: center;
-  background-color: rgba(94, 31, 3, 0.219);
+  background-color: rgb(136, 211, 255);
   height: 600px;
+  box-shadow: 5px 5px 10px rgb(27, 1, 1);
 }
 
 .skillsInfo {
@@ -157,7 +201,7 @@ h3,
 .paragraph {
   position: relative;
   margin-bottom: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .highlight {
@@ -175,7 +219,7 @@ h3,
   height: 20px; /* Grosor del subrayado */
   background: linear-gradient(
     to right,
-    rgba(113, 201, 13, 0.5),
-    rgba(201, 13, 13, 0)
+    rgba(201, 236, 6, 0.466),
+    rgba(251, 255, 2, 0.082)
   );
 }
