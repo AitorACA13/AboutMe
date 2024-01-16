@@ -80,6 +80,7 @@ function Experience() {
     './../../../public/images/chica.jpg',
     './../../../public/images/piano02.jpg',
     './../../../public/images/Sink01.jpg',
+    './../../../public/images/greg.jpg',
   ];
 
   return (
